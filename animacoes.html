@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Matemática em movimento | José Salazar</title>
+<style>
+  :root { --azul:#008080; --escuro:#005858; --fundo:#f5f8f8; --texto:#24383c; --linha:#d7e3e4; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:system-ui, sans-serif; background:var(--fundo); color:var(--texto); line-height:1.65; }
+  header { background:var(--escuro); color:white; padding:26px 6%; font-weight:650; }
+  header a { color:white; text-decoration:none; }
+  main { max-width:1100px; margin:auto; padding:32px 24px 65px; }
+  a { color:var(--escuro); }
+  h1 { color:var(--azul); font:normal clamp(2rem,5vw,3rem)/1.2 Georgia,serif; }
+  h2 { color:var(--azul); font-size:1.3rem; margin:0 0 16px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,350px),1fr)); gap:20px; }
+  .card { background:white; border:1px solid var(--linha); border-radius:12px; padding:22px; }
+  video { display:block; width:100%; background:#f5f8f8; border-radius:6px; }
+  footer { text-align:center; padding:25px; border-top:1px solid var(--linha); }
+</style>
+</head>
+<body>
+<header><a href="index.html">Matemática · José Salazar</a></header>
+<main>
+  <a href="index.html">← Página inicial</a>
+  <h1>Matemática em movimento</h1>
+  <p>Visualização de conceitos matemáticos através de animações.</p>
+  <div class="grid">
+    <!-- Animação 1 -->
+    <article class="card">
+      <h2>Aditividade do integral relativa aos extremos de integração</h2>
+      <video controls playsinline preload="metadata" src="animacoes/Aditividade_do_integral_relativa_aos_extremos_integracao.mp4">O navegador não suporta a reprodução de vídeo.</video>
+    </article>
+    <!-- Animação 2 -->
+    <article class="card">
+      <h2>Cálculo de uma área com dois integrais</h2>
+      <video controls playsinline preload="metadata" src="animacoes/area_com_dois_integrais.mp4">O navegador não suporta a reprodução de vídeo.</video>
+    </article>
+  </div>
+</main>
+<footer>© José Salazar · Matemática</footer>
+</body>
+</html>
