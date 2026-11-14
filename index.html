@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Um espaço dedicado ao ensino, à aprendizagem e à divulgação da Matemática.">
+<title>Matemática | José Salazar</title>
+<style>
+:root{--azul:#008080;--escuro:#008080;--fundo:#f5f8f8;--texto:#24383c;--linha:#d7e3e4}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:var(--texto);background:var(--fundo);line-height:1.65}header{background:#005858;color:white;padding:26px 6%}header .marca{font-size:1.15rem;font-weight:650;letter-spacing:.04em}main{max-width:1100px;margin:auto;padding:0 24px 65px}.hero{padding:65px 0 48px;border-bottom:1px solid var(--linha);position:relative;overflow:hidden}.hero:after{content:'∫';position:absolute;right:4%;top:-55px;font-family:Georgia,serif;font-size:290px;color:var(--azul);opacity:.09;pointer-events:none}.hero>*{position:relative;z-index:1}.rotulo{color:var(--azul);text-transform:uppercase;letter-spacing:.17em;font-size:.77rem;font-weight:700}h1{font-family:Georgia,serif;font-weight:normal;font-size:clamp(2rem,5vw,4rem);line-height:1.08;margin:12px 0;color:var(--escuro)}.autor{font-size:1.5rem;margin:0 0 18px}.sub{font-size:1.15rem;max-width:650px;margin:0}h2{font-size:1.5rem;color:var(--escuro);margin:37px 0 18px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}.card{background:white;border:1px solid var(--linha);border-radius:12px;padding:24px;display:flex;flex-direction:column;align-items:flex-start;min-height:205px}.simbolo{color:var(--azul);font-family:Georgia,serif;font-size:30px;line-height:1}.card h3{margin:15px 0 4px;font-size:1.2rem;color:var(--escuro)}.card p{margin:0 0 18px;color:#506469}.estado{margin-top:auto;color:#506469;font-size:.82rem;border:1px solid var(--linha);padding:3px 10px;border-radius:30px}footer{border-top:1px solid var(--linha);padding:24px;text-align:center;font-size:.9rem;color:#506469}a{color:var(--azul)}@media(max-width:600px){.hero{padding:40px 0}.hero:after{font-size:200px;top:0}header{padding:16px 24px}}
+</style>
+<!-- Interpretar expressões matemáticas em LaTeX -->
+<script>
+    MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+    };
+</script>
+
+<script defer
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+</head>
+<body>
+<header><div class="marca">José Salazar · Matemática</div></header>
+<main>
+<section class="hero">
+<div class="rotulo">Ensino · Aprendizagem · Divulgação</div>
+<h1>Matemática</h1>
+<p class="autor">José Salazar</p>
+<p class="sub">Um espaço dedicado ao ensino, à aprendizagem e à divulgação da Matemática.</p>
+</section>
+<h2>Explorar conteúdos</h2>
+<!-- Cada cartão corresponde a uma secção. Quando houver conteúdos, substituir o estado por uma ligação, por exemplo: <a href="integrais.html">Explorar</a>. -->
+<div class="grid">
+<article class="card"><span class="simbolo" aria-hidden="true">▷</span><h3>Aulas em vídeo</h3><p>Aulas e explicações de Matemática, criados como complemento de outros recursos escritos.</p><span class="estado">Em preparação</span></article>
+<article class="card"><span class="simbolo" aria-hidden="true">∫</span><h3>Animações interativas</h3><p>Explorar conceitos matemáticos através de representações dinâmicas.</p><span class="estado">Em preparação</span></article>
+<article class="card"><span class="simbolo" aria-hidden="true">Σ</span><h3>Livros e publicações</h3><p>Livros, apontamentos e outros materiais de apoio ao estudo.</p><span class="estado">Em preparação</span></article>
+<article class="card"><span class="simbolo" aria-hidden="true">⇒</span><h3>Demonstrações matemáticas</h3><p>Compreender os resultados matemáticos e as razões pelas quais são mesmo verdades.</p><span class="estado">Em preparação</span></article>
+<article class="card"><span class="simbolo" aria-hidden="true" style="align-self:center;">
+    $\scriptsize (a+b)^2\neq a^2+b^2\,?$
+</span><h3>Erros de matemática comuns</h3><p>Quem não tem dentro de si um saco de erros? Há que o esvaziar, o quanto antes? </p><span class="estado">Em preparação</span></article>
+</div>
+<!-- A ligação permanente ao canal YouTube será acrescentada quando o endereço for confirmado. -->
+</main>
+<footer>© José Salazar · Matemática</footer>
+</body>
+</html>
