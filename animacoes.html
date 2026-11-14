@@ -14,9 +14,14 @@
   a { color:var(--escuro); }
   h1 { color:var(--azul); font:normal clamp(2rem,5vw,3rem)/1.2 Georgia,serif; }
   h2 { color:var(--azul); font-size:1.3rem; margin:0 0 16px; }
-  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,350px),1fr)); gap:20px; }
-  .card { background:white; border:1px solid var(--linha); border-radius:12px; padding:22px; }
-  video { display:block; width:100%; background:#f5f8f8; border-radius:6px; }
+  .lista { list-style:none; margin:26px 0; padding:0; max-width:850px; }
+  .lista li { border-bottom:1px solid var(--linha); }
+  .lista a { display:flex; align-items:center; gap:14px; padding:16px 0; color:var(--azul); font-size:1.1rem; text-decoration:none; font-weight:600; }
+  .descricao { margin:0 30px 18px; color:var(--texto); font-size:1rem; }
+  .lista a:hover { text-decoration:underline; }
+  .lista a:focus-visible { outline:2px solid var(--azul); outline-offset:4px; }
+  .play { flex:none; font-size:1.2rem; }
+  .externo { margin-left:auto; flex:none; }
   footer { text-align:center; padding:25px; border-top:1px solid var(--linha); }
 </style>
 </head>
@@ -26,18 +31,28 @@
   <a href="index.html">← Página inicial</a>
   <h1>Matemática em movimento</h1>
   <p>Visualização de conceitos matemáticos através de animações.</p>
-  <div class="grid">
+  <!-- Cada ligação abre o respetivo MP4 num novo separador. -->
+  <ul class="lista">
     <!-- Animação 1 -->
-    <article class="card">
-      <h2>Aditividade do integral relativa aos extremos de integração</h2>
-      <video controls playsinline preload="metadata" src="animacoes/Aditividade_do_integral_relativa_aos_extremos_integracao.mp4">O navegador não suporta a reprodução de vídeo.</video>
-    </article>
+    <li>
+      <a href="animacoes/Aditividade_do_integral_relativa_aos_extremos_integracao.mp4" target="_blank" rel="noopener noreferrer">
+        <span class="play" aria-hidden="true">▷</span>
+        <span>Aditividade do integral relativa aos extremos de integração</span>
+        <span class="externo" aria-hidden="true">↗</span>
+      </a>
+      <p class="descricao">Interpretação geométrica da propriedade aditiva do integral definido, incluindo o caso em que se inverte o sentido de integração num dos intervalos.</p>
+    </li>
     <!-- Animação 2 -->
-    <article class="card">
-      <h2>Cálculo de uma área com dois integrais</h2>
-      <video controls playsinline preload="metadata" src="animacoes/area_com_dois_integrais.mp4">O navegador não suporta a reprodução de vídeo.</video>
-    </article>
-  </div>
+    <li>
+      <a href="animacoes/area_com_dois_integrais.mp4" target="_blank" rel="noopener noreferrer">
+        <span class="play" aria-hidden="true">▷</span>
+        <span>Cálculo de uma área com dois integrais</span>
+        <span class="externo" aria-hidden="true">↗</span>
+      </a>
+      <p class="descricao">Determinação da área de uma região plana limitada por duas curvas e pelo eixo das abcissas, recorrendo a dois integrais definidos e à fórmula de Newton–Leibniz.</p>
+    </li>
+  </ul>
+  <p>Os vídeos abrem num novo separador.</p>
 </main>
 <footer>© José Salazar · Matemática</footer>
 </body>
