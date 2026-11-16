@@ -24,6 +24,19 @@
   .externo { margin-left:auto; flex:none; }
   footer { text-align:center; padding:25px; border-top:1px solid var(--linha); }
 </style>
+<!-- Interpretar expressões matemáticas em LaTeX -->
+<script>
+    MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+    };
+</script>
+
+<script defer
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
 </head>
 <body>
 <header><a href="index.html">Matemática · José Salazar</a></header>
@@ -40,7 +53,7 @@
         <span>Aditividade do integral relativa aos extremos de integração</span>
         <span class="externo" aria-hidden="true">↗</span>
       </a>
-      <p class="descricao">Interpretação geométrica da propriedade aditiva do integral definido, incluindo o caso em que se inverte o sentido de integração num dos intervalos.</p>
+      <p class="descricao">Interpretação geométrica da propriedade aditiva do integral definido, com o caso em que o extremo de integração não está em $[a,b].$</p>
     </li>
     <!-- Animação 2 -->
     <li>
@@ -49,7 +62,7 @@
         <span>Cálculo de uma área com dois integrais</span>
         <span class="externo" aria-hidden="true">↗</span>
       </a>
-      <p class="descricao">Determinação da área de uma região plana limitada por duas curvas e pelo eixo das abcissas, recorrendo a dois integrais definidos e à fórmula de Newton–Leibniz.</p>
+      <p class="descricao">Cálculo da medida área de uma região plana limitada por mais que duas linhas do plano, recorrendo ao cálculo de dois integrais definidos $-$ fórmula de Newton–Leibniz.</p>
     </li>
   </ul>
   <p>Os vídeos abrem num novo separador.</p>
